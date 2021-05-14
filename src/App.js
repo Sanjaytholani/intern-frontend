@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Player from "./components/Player";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import PdfViewer from "./components/PdfViewer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <Switch>
+          <div className="flex">
+            <div className="flex-7">
+              <Route exact path="/video">
+                <Player />
+              </Route>
+              <Route exact path="/pdf">
+                <PdfViewer />
+              </Route>
+            </div>
+            <div className="flex-3">
+              <Sidebar />
+            </div>
+          </div>
+          <Route exact path="/navbar">
+            <Navbar />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
