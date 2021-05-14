@@ -7,7 +7,11 @@ module.exports = {
       7: "7 7 0%",
     },
 
-    extend: {},
+    extend: {
+      animation: {
+        "spin-slow": "spin 0.5s forwards",
+      },
+    },
   },
   variants: {
     extend: {},

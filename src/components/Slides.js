@@ -6,7 +6,7 @@ const Slides = () => {
       <ReactGoogleSlides
         width={640}
         height={480}
-        slidesLink="https://docs.google.com/presentation/d/172oFC8-LBw0GQEymFDbTBn-ORh7wi2ByfUXrXm7H-AM"
+        slidesLink="https://docs.google.com/presentation/d/1_tS0cm-9XfwXlTQSHpkXI77TnfsVNafgIc_B7fMLEZM/edit?usp=sharingM"
         slideDuration={5}
         showControls
         loop
