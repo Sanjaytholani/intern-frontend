@@ -3,7 +3,7 @@ const PdfViewer = () => {
     <div>
       <iframe
         title="pdf"
-        src="http://www.africau.edu/images/default/sample.pdf"
+        src="http://cbseacademic.nic.in/web_material/CurriculumMain20/Main-Secondary/Mathematics_Sec_2019-20.pdf"
         height="1000px"
         width="1000px"
       ></iframe>
